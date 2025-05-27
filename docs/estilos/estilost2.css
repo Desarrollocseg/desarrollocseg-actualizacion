@@ -2,11 +2,18 @@
 /* Estilos generales */
 
 body {
-	 font-family: Arial, sans-serif;
+	 font-family: 'inter', sans-serif;
+	 line-height: 1.6;
    	 margin: 0;
    	 padding: 0;
    	 background-color: #fffffffa;
 }
+
+h1, h2, h3, h4, h5, h6 {
+
+	font-family: 'Poppins',sans-serif;
+}
+	
 
      /*Estilos de enlaces*/ 
 
@@ -282,15 +289,29 @@ nav a:hover {
    
 }
 
+#migas{
+	font-size: small;
+	background-color: #F9F9F9;
+	display: flex;
+	width: 65%;
+	height: 40px;
+
+}
+
+.separador{
+	height: 2%;
+	
+}
+
 #blog{
     	background-color:white;
-  	padding:1%;
+  		padding:1%;
         display: grid;
         grid-gap: 10px;
-	width: 80%; 
+		width: 80%; 
         border-color: #1E6BA2;
         border-style: double;
-	margin-right:0.5%;
+		margin-right:0.5%;
 }
 
 .img-blog{
@@ -367,9 +388,8 @@ text-decoration: none;
 #contenido1{
 
 	display: flex;
-        justify-content: space-between; /* Esto distribuye los elementos de manera uniforme */
-
-        align-items: center; /* Alinea el texto y la imagen verticalmente */   
+    justify-content: space-between; /* Esto distribuye los elementos de manera uniforme */
+	align-items: center; /* Alinea el texto y la imagen verticalmente */   
 	min-height: 100%;
 	background:linear-gradient(to right, #1E6BA2,#68757B,#68757B);
 	padding:3%;
@@ -527,6 +547,8 @@ background-color:#45a049;
 
 
 
+												/*estilo de servicios*/
+
 #servicios {
     	flex:content;
     	/*display: none;*/
@@ -569,6 +591,7 @@ background-color:#45a049;
     	opacity: 1; /* Muestra el elemento con una opacidad completa */
 }
 
+										/*estilo de servicios*/
 section {
     	padding:0%;
     	display: grid;
@@ -863,6 +886,20 @@ max-width:130px;
   color: #1E6BA2;
   font-size: small;
 }
+
+/*botton tarjetas*/
+#trajetaBtn{
+	background-color: #1E6BA2;
+	color:white;
+	padding: 3%;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+/*botton tarjetas*/
+
 /*boton whatsapp*/
 
 #whatsappBtn {

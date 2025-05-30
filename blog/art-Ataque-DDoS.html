@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K3TKPZ4N');</script>
+<!-- End Google Tag Manager -->
+   
+    <meta charset="UTF-8">
+    <title>Blog-DESARROLLOCSEG-¿Que es la Ciberseguridad?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../docs/estilos/estilost2.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3TKPZ4N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<!--cabecera-->
+
+    <header>
+		<div id="head1">
+
+			<div id="hide">
+
+			 <img id="logo" src="../docs/img/logob1.png" alt="Logo">
+
+		 </div>
+		</div>
+
+
+	  <div id="head2">
+	  <div id="hide1">
+
+		  <img id="logo" src="../docs/img/logo1.png" alt="Logo">
+
+		</div>
+
+	   <div id="hide">
+
+	  <H2>Desarrollo web y Ciberseguridad</H2>
+		 </div>
+	  </div>
+
+
+  <!--barra de navegacion -->
+<nav id="navbar">
+	  <div id="menu-toggle">
+	  <div class="bar"></div>
+	  <div class="bar"></div>
+	  <div class="bar"></div>
+  </div>
+
+
+	  <div id="logo-navbar"> <!-- Aquí aparecerá el logo en la barra de navegación -->
+
+		  <img src="../docs/img/logob1.png" alt="Logo" id="logo-navbar-image">
+
+	  </div>
+	  
+        <ul id="menu-items">
+         <li><a href="../index.html"rel="noopener noreferrer">INICIO</a></li>
+        <li><a href="postIndex.html"rel="noopener noreferrer">POST.INDEX</a></li>
+        <li><a href="cseg-dump.html"rel="noopener noreferrer"class="disabled-link">DCSEG.DUMP</a></li>
+        </ul>
+
+    </nav>
+    <!--fin de la barra de navegacion -->
+	    <!--fin de la cabecera-->
+
+    </header>
+
+ <main>
+
+<div class="container">
+ <div class="column1">
+    <div id="principal">
+
+    <section id="blog">
+   <br>
+   <br>
+   <div id = "migas"><p>desarrollocseg.com >>> blog >> ciberseguridad > <strong>¿Que es un Ataque DDoS ?</strong></p></div>
+<!--1-->
+	<articl id="contenido">
+    <h2>Blog DesarrolloCSeg </h2>
+    
+
+	 	<div class="img-blog"><img src="../docs/img/ciberseguridad.jpg"alt="imagen-ciberseguridad"></div>        
+    
+   
+    <h3>¿Que es un Ataque DDoS denegación de servicio distribuido?</h3>
+    <p>Los ataques DDoS son parte del grupo de los ataques de denegación de servicio (ataques DoS),Los ataques DDoS envían tráfico atacante
+	    distribuido desde múltiples fuentes a la vez. </p>
+	   <p>Utilizan protocolos de conexión de red estándar como el Protocolo de Transferencia 
+	de Hipertexto (HTTP) y el Protocolo de Control de Transmisión (TCP) este tráfico busca sobre cargar el ancho de banda de los endpoint,
+	aplicaciones y otros activos con más tráfico del que pueden procesar, siendo su  único objetivo desactivar o derribar recurso en línea 
+	disponibles,  como lo son sitios web o servicios en la nube y aplicaciones, sobrecargando estos con solicitudes de conexión consecutiva, 
+	paquetes falsos u otro tráfico malicioso. </p>
+        
+	<h3>Ataques DDos y sus tipos</h3>
+	<p>Para entender los tipos de ataque tenemos que echar un vistazo al  modelo de referencia OSI  que nos da  un marco de  siete capas 
+	de red que definen la transformación de la información cuando viaja entre un dispositivo a otro conectados a la internet, asigna a 
+	cada capa funciones específicas garantizando la eficacia en la comunicación.</p>
+	
+	<h4>Ataques de capa de aplicación</h4>
+	<p>Se dirigen a la capa de aplicación (capa 7) del modelo OSI ,esta capa es donde las páginas web se ven cuando el usuario genera 
+	la petición al sitio ,en este ataque  se  inunda el protocolo HTTP con  múltiples peticiones al puerto 80 o sitio web, desde varios 
+	dispositivos generando tasas altas de tráfico que logran ralentizar o bloquear el acceso a usuarios legítimos que quieran ingresar al 
+	sitio ya que este no puede atender todas las peticiones recurrentes realizadas desde el navegador o consola.</p>
+	
+	<h4>Esto sucede en dos escenarios comunes</h4>
+        <h3>1-inundación SYN o SYN Flood:</h3> en la comunicación típica TCP entre dispositivos el cliente  envía un paquete SYN que inicia la
+	 comunicación, el servidor  responde con un paquete  SYN/ACK y el cliente  responde con ACK  completando  el enlace de comunicación.</p>
+        <p>Cuando sucede un ataque donde se busca inundar con paquetes SYN, la comunicación no se completa, ya que el cliente  envía una tasa 
+	de paquetes alto y erróneos falsificando IPs de origen, dando como resultado que el servidor no reciba por parte del cliente el paquete 
+	ACK final , causando la inundación de respuestas SYN/ACK no confirmadas, manteniendo en el servidor recursos ocupados dejándolo sin 
+	capacidad futura de procesar las conexiones legítimas.</p>
+        <p>Este tipo de ataque causa que el servidor sea lento y deje de responder, afecta los servicios para los usuarios reales que estén 
+	en línea  o intenten  conectarse.</p>
+	
+	<h4>Cómo prevenir este ataque:</h4>
+        <p>Limitar las conexiones pendientes: Los servidores pueden restringir la cantidad de conexiones incompletas que mantienen.</p>
+        <p>Filtrado de tráfico: Usar firewalls o sistemas de detección de intrusiones (como Suricata) para identificar y bloquear 
+	tráfico malicioso.</p>
+	<p>Uso de SYN cookies: Una técnica que permite al servidor responder sin guardar el estado de la conexión hasta que el cliente envíe 
+	un ACK.</p>
+
+	<h3>2- ataque smurf o pitufo: </h3>
+	<p>El ataque Smurf es una forma en la que un atacante puede aprovechar una característica básica de la red (el ping) y amplificar 
+	su efecto a través de múltiples dispositivos.</p>
+	<p>En este escenario el atacante  desde una IP falsa clonando la de la víctima envía una solicitud eco ICMP, esta solicitud se replica 
+	desde una red de difusión IP a otros dispositivos  que estén en una red determinada,dando como resultado que los dispositivos 
+	responden simultáneamente a la IP de la víctima, causando  la inundación del dispositivo con paquetes de información mayores a 
+	su capacidad de procesamiento.</p>
+
+	<h4>Cómo prevenir este ataque:</h4>
+	<p> Si se desactiva el direccionamiento de la difusión de IP en cada router de la red., el ataque no puede saturar una red ya que el
+	 mensaje Ping de ICMP, que solicita a los nodos de red deja de transmitirse  evitando así la respuesta eco que es la causante de la
+	 saturación.</p>
+	
+	<h4>¿Por qué es peligroso?</h4>
+	<p>El ataque Smurf utiliza el concepto de amplificación, donde con un solo mensaje malicioso, el atacante puede generar cientos o miles 
+	de respuestas dirigidas a la víctima, sobrecargando rápidamente sus recursos. Esto puede provocar que los sistemas de la víctima 
+	se vuelvan lentos, inestables o incluso se bloqueen.</p>
+
+	<h3>Ataques volumétricos</h3>
+	<p>Este tipo de ataques consumen todo el ancho de banda disponible dentro de una red impidiendo  que los usuarios legítimos se conecten 
+	a los recursos de la red o servidor de destino, inundando las redes con cantidades muy altas de tráfico en este grupo 
+	tenemos los ataques de  Inundaciones UDP, Inundaciones ICMP y Ataques de amplificación de DNS.</p>
+	
+	<h3>1 inundación UDP(UDP Flood):</h3>
+	<p>Se envían paquetes falsos del Protocolo de datagrama de usuarios (UDP) a los puertos de un host de destino en busca de una aplicación 
+	para recibir estos paquetes.sabiendo que los paquetes UDP son falsos,el host envía un  mensaje ICMP «Destino inaccesible» al remitente ya 
+	que no existe ninguna aplicación real que los reciba. Con este ataque se logra  sobrecargar la capacidad de ese dispositivo para procesar
+	 y responder. al flujo de paquetes UDP falsos, denegando la disponibilidad del host para responder a los paquetes legítimos.</p>
+	<p>Lo normal sería que cuando un servidor recibe un paquete UDP en un puerto determinado, realiza dos pasos como respuesta: 
+	<br/>
+	-El servidor comprueba si se está ejecutando algún programa que esté escuchando en el puerto especificado. 
+	<br/>
+	-Si ningún programa recibe paquetes en ese puerto, el servidor responde con un paquete ICMP (ping )informando que el Destino es 
+	 inaccesible.</p>
+	
+	<h4>¿Por qué es peligroso?</h4>
+	<p>Con una herramienta simple, el atacante puede generar grandes volúmenes de tráfico UDP hacia una víctima, causando una 
+	denegación de servicio. Esto puede interrumpir servicios en servidores, aplicaciones o redes completas.</p>
+	
+	<h4>¿Cómo prevenir las inundaciones UDP?</h4>
+
+	<p>-Filtrar el tráfico UDP no necesario: Configurar firewalls o sistemas de prevención de intrusiones (IPS) para bloquear o 
+	filtrar tráfico UDP no solicitado o sospechoso.
+	<br/>
+	-Limitar la velocidad de tráfico UDP: Implementar mecanismos de limitación de velocidad (rate limiting) para el tráfico UDP 
+	puede mitigar el impacto de este tipo de ataque.
+	<br/>
+	-Monitorear la red: Utilizar herramientas de monitoreo que detecten patrones anormales en el tráfico UDP y alerten a los administradores
+	 antes de que el ataque cause daños graves.</p>
+	
+	<h3>2 Inundaciones ICMP (ICMP Flood):</h3>
+	<p>Estos ataques de inundación de protocolo de control de mensajes de Internet (ICMP)  bombardean objetivos con solicitudes de eco ICMP 
+	desde múltiples direcciones IP falsificadas o botnets causando que el servidor o dispositivo de destino se sobrecargue y no pueda 	
+	procesar las solicitudes de eco ICMP válidas.A medida que el dispositivo intenta responder, todos sus recursos (memoria, procesamiento e interfaz ) 
+	se quedan sin capacidad  y ya no puede atender solicitudes o usuarios legítimos.</p>
+
+	<p>Con el protocolo ICMP se prueba la existencia de conectividad entre dispositivos, un dispositivos envía una solicitud 
+	de paquetes (ping) a otro y según el tiempo de respuesta se establece activo o inactivo este, en el ataque se elaboran cantidades
+	 altas de este recurso causando que el dispositivo receptor no responda satisfactoriamente despues de un número determinado de 
+	peticiones denegando así el servicio.</p>
+
+	<h4>¿Por qué es peligroso?</h4>
+	<p>Es peligroso porque se realiza  con muy pocos recursos del lado del atacante, solo hace falta una computadora o incluso múltiples
+	 dispositivos (en un ataque DDoS) para generar el tráfico masivo que agota rápidamente la capacidad de la víctima.</p>
+
+	<h4>¿Cómo prevenir las inundaciones ICMP?</h4>
+
+	<p>1 Limitar el tráfico ICMP: Configurar firewalls para limitar o filtrar el tráfico ICMP, permitiendo solo las solicitudes esenciales.
+	<br/>
+	2 Rate Limiting (Limitación de tasa): Implementar mecanismos para limitar la velocidad a la que se permiten mensajes ICMP, de modo que 
+	el sistema no se sobrecargue con solicitudes.
+	<br/>
+	3 Deshabilitar respuestas ICMP innecesarias: En algunos casos, se puede configurar el sistema para que no responda a solicitudes de ping
+	 o para que filtre aquellas que provengan de fuentes sospechosas.
+	<br/>
+	4 Sistemas de detección de intrusos (IDS): Utilizar herramientas como Suricata o Snort para monitorear el tráfico de red y detectar 
+	patrones anormales que podrían indicar una inundación ICMP.</p>
+
+	<h3>3 Ataques de amplificación de DNS</h3>
+	<p>Un ataque de amplificación de DNS es una técnica peligrosa que utiliza servidores DNS para generar grandes volúmenes de tráfico hacia 
+	una víctima, saturándola con datos que nunca solicitó. Al entender cómo funciona y tomar medidas de prevención, se pueden proteger las 
+	redes contra esta forma de ataque DDoS, que puede resultar altamente dañina si no se mitiga a tiempo.</p>
+	<p>Los ataques de amplificación de DNS aprovechan la naturaleza del sistema de nombres de dominio (DNS) para sobrecargar a su víctima 
+	con una gran cantidad de tráfico no solicitado.</p>
+	<p>El atacante utiliza servidores DNS públicos para generar grandes cantidades de tráfico, que luego son redirigidas a la víctima.  
+	El atacante envía un pequeño mensaje al servidor DNS, suplantando la IP de la víctima, preguntando por información extensa 
+	(como los registros DNS completos de un dominio), el servidor DNS responde enviando una gran cantidad de datos, 
+	pero en lugar de enviarlos al atacante,los manda a la dirección IP de la víctima, inundándose con tráfico masivo.</p>
+	
+	<h4>¿Cómo prevenir los ataques de amplificación de DNS?</h4>
+		
+	<p>Configurar correctamente los servidores DNS: Los administradores de servidores DNS deben asegurarse de que sus servidores no respondan
+	 a solicitudes de DNS no autorizadas o externas, lo que se conoce como cerrar un servidor DNS abierto.
+	<br/>
+	Implementar Rate Limiting (limitación de tasa): Los servidores DNS deben limitar la cantidad de respuestas que envían a una sola 
+	dirección IP en un periodo corto de tiempo.
+	<br/>
+	Filtrar direcciones IP falsificadas: Los routers y firewalls deben filtrar paquetes que provengan de direcciones IP que no coincidan 
+	con la red de origen para prevenir la falsificación de IP.
+	<br/>
+	Usar servidores DNS seguros: Utilizar servicios de DNS que incluyan protección contra amplificación, como los ofrecidos por algunas 	
+	soluciones de seguridad en la nube.
+	<br/>
+	Implementar soluciones de mitigación DDoS: Estas soluciones pueden detectar y  mitigar grandes volúmenes de tráfico anómalo generado por 
+	ataques de amplificación antes de que lleguen a la infraestructura de la víctima.</p>
+
+	<h5>Referencias</h5>
+	<ul>
+	<li><a href="https://www.ibm.com/es-es/topics/ddos">ibm ddos</a></li>
+	<li><a href="https://concepto.de/modelo-osi/" >modelo osi</a></li>
+	<li><a href="https://www.kaspersky.es/resource-center/definitions/what-is-a-smurf-attack">Kaspersky smurf attack </a></li>
+	<li><a href="https://www.cloudflare.com/es-es/learning/ddos/udp-flood-ddos-attack/">cloudflare udp flood</a></li>
+	<li><a href="https://www.akamai.com/es/glossary/what-is-icmp-flood-ddos-attack">akamai icmp flood attack</a></li>
+	<li><a href="https://www.cloudflare.com/es-es/learning/ddos/dns-flood-ddos-attack/">cloudflare dns flood attack</a></li>
+	<li><a href="https://www.cloudflare.com/es-es/learning/ddos/dns-amplification-ddos-attack/">cloudflare dns amplificado</a></li>
+ 	<li>Asistido con GPT</li>
+
+	</ul>    
+    
+	</article>        
+<div id="presentacion">
+
+	<div id="imagen-presentacion">
+	
+       	<img src="../docs/img/presentacion.jpg"alt="imagen-presentacion">
+	</div>
+	<article id="contenido">
+	<div id="text-presentacion">
+	<p>Hola soy Cesar Cruz Desarrollador web con conocimientos en ciberseguridad y administración de sistemas Linux. 
+	 el objetivo de este blog es desarrollar  publicaciones en forma de artículos sobre tecnología, desarrollo web y 
+	ciberseguridad.</p>
+	</div>
+	</div>
+
+    </article>
+
+</section>
+
+										<!--lista de entradas-->
+<div id="main-container">
+
+<div id="sidebar">
+
+  <div id="entradas">
+<h3>Entradas</h3>
+<ul>
+<li><a href="#ciber">Ciberseguridad</a><li>
+	<ul>
+	<li><a href="#octubre-2024-ddos"rel="noopener noreferrer">ataque DDoS</a></li>
+	</ul>
+<li><a href="#desa">Desarrollo web</a><li>
+	<ul>
+
+        <li><a href="#marzo-2025-UX"rel="noopener noreferrer">UX y web</a></li>
+        </ul>
+
+<li><a href="#tecno">Tecnología</a><li>
+	<ul>
+	<li><a href="#octubre-2024-linux"rel="noopener noreferrer">Linux</a></li>
+        </ul>
+
+</ul>
+<div id="hide">
+<img src="../docs/img/logob1.png" alt ="logo"></div>
+<br/>
+</div>
+
+											<!--lista de entradas-->
+
+												<!--anuncios-->  
+
+<div id="anuncios3">
+
+<div id="hide">
+<a href=../docs/form/contact-ads.html> <img src="../docs/img/anuncio3.png" alt ="anuncio3 160x600"target="_blank" rel="noopener noreferrer"></a>
+</div>
+								
+	<!--hostgator-->
+<div id="hide">
+<a href="https://www.hostgator.la/7395-6-1-1594.html"> <img src="../docs/img/hg300x600.png" alt="hg300x600.png"target="_blank" rel="noopener noreferrer"></a>
+	<!--hostgator-->
+</div>
+
+</div>
+
+</div>
+</div>
+
+<article id="anuncios1-2">
+
+<div class="anuncio"id="anuncios1">
+
+<div id="hide">
+<a href=../docs/form/contact-ads.html><img src="../docs/img/anuncio1.png" alt ="anuncio 336x280"target="_blank" rel="noopener noreferrer"></a></div>
+
+<div id="hide1">
+<a href=../docs/form/contact-ads.html><img src="../docs/img/anuncio1m.png" alt ="anuncio 320x50"target="_blank" rel="noopener noreferrer"></a></div>
+
+</div>
+
+<div class="anuncio" id="anuncios2">
+ 
+<!--<div id="hide">
+<a href=docs/form/contact-ads.html><img src="docs/img/anuncio2.png" alt ="anuncio1 336x280"target="_blank" rel="noopener noreferrer"></a></div>-->
+
+	<!--hostgator-->
+<div id="hide">
+<a href="https://www.hostgator.la/7395-6-1-1599.html" target="_blank" rel="nofollow"><img style="border:0px" src="https://latam-files.hostgator.com/es/afiliados/webhosting/970x250.png" width="970" height="250" alt=""></a></div>
+	<!--hostgator-->
+
+<div id="hide1">
+<a href=../docs/form/contact-ads.html><img src="../docs/img/anuncio2m.png" alt ="anuncio 320x50"target="_blank" rel="noopener noreferrer"></a></div>
+
+</div>
+<!--vista movil anuncio lateral-->
+<div id="hide1"> 
+<div class="anuncio"id="anuncio3">
+	<!--hostgator-->
+<a href="https://www.hostgator.la/7395-6-1-1598.html" target="_blank" rel="nofollow"><img style="border:0px" src="https://latam-files.hostgator.com/es/afiliados/webhosting/970x90.png" width="970" height="90" alt=""></a>
+	<!--hostgator-->
+<!--<a href=docs/form/contact-ads.html><img src="docs/img/anuncio3m.png" alt ="anuncio 320x50"target="_blank" rel="noopener noreferrer"></a>-->
+</div>
+</div>
+<!--vista movil anuncio lateral-->
+
+											<!--fin anuncios-->
+</article>
+
+
+
+
+
+<!--botton arriba-->
+<button onclick="scrollToTop()" id="backToTopBtn">↑subir</button>
+<!--botton arriba-->
+
+
+
+
+
+  </div>
+
+    
+   <!--tarjetas
+	
+  fin-tarjetas-->
+
+    </main>
+<!--fin contenido-->
+
+<!--pie de pagina -->
+
+<footer>
+
+<div id= "logo-footer">
+<a href="#"> <img src="../docs/img/logoa.png" alt ="logo"></a>
+</div>
+
+    <div id="footer1">
+<h2>Redes sociales</h2>
+<ul>
+     <li><a href="https://www.youtube.com/@Desarrollocseg" target="_blank"><img src="../docs/img/youtube.png"alt ="youtube"rel="noopener noreferrer"></>
+     <li><a href="https://github.com/Desarrollocseg"target="_blank"><img src="../docs/img/ghub.png" alt="github" rel="noopener noreferrer"></a></li>
+     <li><a href= "https://www.instagram.com/desarrollocseg?igsh=MXJiaXFzeDRtb2Q1bQ=="target="_blank"><img src="../docs/img/instagram.png" alt="instagram"  rel="noopener noreferrer"></a></li>
+     <li><a href="https://www.freelancer.com/u/cesareduardocruz"target="_blank"><img src="../docs/img/freelancer.png" alt="freelancer"></a></li>
+</ul>
+
+  </div>
+
+  <div id="footer1">
+  <h2>/connect</h2>
+  <ul>
+  	<li><a href="../index.html#serv"rel="noopener noreferrer">Servicios</a></li>
+	<li><a href="../contactenos.html"rel="noopener noreferrer">Contacto</a></li>
+</ul>
+
+</div>
+
+    <div id="footer2">
+<h2>Ayuda</h2>
+    <ul>
+     <li><a href="../ayuda/FAQs.html"target="_blank" rel="noopener noreferrer">FAQs</a></li>
+    <li><a href="#" target="_blank" rel="noopener noreferrer">Acerca de nosotros</a></li>
+    <li><a href="../contactenos.html"  rel="noopener noreferrer">Peticiones, Quejas Reclamos y Sugerencia,(PQRS)</a></li>
+</ul>
+  </div>
+
+<div id="footer3">
+<h2>Legal</h2>
+    <ul>
+        <li><a href="../legal/terminos.html" target="_blank" rel="noopener noreferrer">Términos y condiciones</a></li>
+        <li><a href="../legal/privacidad.html" target="_blank" rel="noopener noreferrer">Política de privacidad</a></li>
+        <li><a href="../legal/cookies.html" target="_blank" rel="noopener noreferrer">Política de cookies</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer"></a></li>
+
+   </ul>
+</div>
+
+</footer>
+
+    <!--fin del pie de pagina -->
+
+    <!--scripts-->
+
+   <script src="../docs/scripts/navbar-script.js"></script>
+   <script src="..7docs/scripts/blog.js"></script>	 
+   <script src="../docs/scripts/boton-arriba.js"></script>
+
+    <!--fin de los scripts-->
+
+    </body>
+    </html>

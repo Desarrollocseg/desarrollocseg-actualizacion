@@ -213,6 +213,8 @@ nav a:hover {
     	color: #68757B;
     	text-decoration: none;
     	font-size: 15px;
+		border-style: double;
+		border-radius: 15%;
 }
 
 
@@ -302,6 +304,10 @@ nav a:hover {
 	height: 2%;
 	
 }
+.separador2{
+	height: 99px;
+	width: 100%;
+}
 
 #blog{
     	background-color:white;
@@ -325,8 +331,16 @@ nav a:hover {
 	 margin: 5% 0% 5% 0%;
 }
 .img-blog img {
-	max-width: 400px;
+
+	/*max-width: 400px;*/
   	filter: grayscale(85%);
+	width: 40%;
+	height: 200px;
+  	max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+  	max-height: 100%;
+  	border-bottom-left-radius: 10%;
+  	border-top-right-radius: 10%;
+
 }
 #presentacion {
 	display:flex;		
@@ -357,7 +371,7 @@ nav a:hover {
 } 
 .btn-leer-mas:hover {
     opacity: 0.8;
-	background-color:#1E6BA2
+	background-color:#1E6BA2;
 
 }
 
@@ -396,8 +410,8 @@ text-decoration: none;
 }
 #contenido h2{
         font-size:xx-large;
-        color:#F4AF00;
-	margin:1.2em 0;	        
+        color:#FC951E;
+	/*margin:1.2em 0;*/	        
 	border-color: #1E6BA2;
 	border-style: double;
 	text-align: center;
@@ -456,7 +470,7 @@ background-color:#25D366;
 
 #imagen{
         flex: 1; /* La imagen ocupa el otro 50% */
-	 box-shadow: 2px 2px 3px 1px #1E6BA2;
+	 /*box-shadow: 2px 2px 3px 1px #1E6BA2;*/
 }
 
 #imagen > img{
@@ -475,7 +489,7 @@ background-color:#25D366;
         box-shadow: 2px 2px 3px 1px #1E6BA2;
 
         padding: 1px 0px 0px 40px;
-	margin-top: -5%;
+	/*margin-top: -5%;*/
 	/*margin-bottom: 4%;*/
         gap: 1%;
 
@@ -500,8 +514,8 @@ background-color:#25D366;
 	padding-bottom:10px;
 	font-size:xx-large;
  	background-color:#1E6BA2;
-	padding: 13px;
-	margin-bottom: 2%;
+	padding: 3%;
+	margin-bottom: 0%;
 	color: antiquewhite;
 }
 
@@ -548,7 +562,16 @@ background-color:#25D366;
         text-align: center;
         margin-bottom:5%; 
 }
+#contactform{
+	/*height: 100%;*/
+	width: 100%;
+	padding-bottom:100px;
+}
+#mensaje{
+height: 100%;
+width: 100%;
 
+}
 
 #formulariocontacto{
         background-color:#EAF0F2;
@@ -658,8 +681,8 @@ th {
     	justify-content: center; /* Centra horizontalmente */
     	padding: 5px;
 	max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
-	padding-bottom:185px;
-	padding-top: 64px;
+	/*padding-bottom:185px;*/
+	/*padding-top: 64px;*/
 	padding-right: 30px;
 	padding-left: 30px;
   }
@@ -719,12 +742,12 @@ th {
 
 .col-img img {
  
-    	width: 214px;
-	height: 214px;
+   	width: 100%;
+	height: 200px;
   	max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
   	max-height: 100%; /* La imagen ocupará todo el alto de su contenedor */
-  	border-top-left-radius: 10%; 
-        border-top-right-radius: 10%;
+  	/*border-top-left-radius: 10%; */
+    border-top-right-radius: 10%;
 }
 .col-img2 img {
         /*width: 200px;*/ 
@@ -978,10 +1001,12 @@ footer {
     	color:white;
     	text-align: center;
     	padding-top: 2%;
-	padding-bottom: 5%;
+		padding-bottom: 5%;
+		padding-left: 5%;
+		padding-right: 5%;
 }	
 #logo-footer{
-	padding:auto;
+		padding:auto;
         flex:content;
 }
 #footer1{
@@ -1067,7 +1092,17 @@ footer ul li {
 	}
   
 .img-blog img {
-        max-width: 200px;
+
+ /* max-width: 400px;*/
+  filter: grayscale(85%);
+  width: 40%;
+  height: 200px;
+  max-width: 100%;
+  max-height: 100%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+
+        
 }
 
 }
@@ -1103,7 +1138,7 @@ margin-right: 10%;
 #contenido3 {
  
   font-size: larger;
- 
+
 }
 
 #contenido4 h2 {

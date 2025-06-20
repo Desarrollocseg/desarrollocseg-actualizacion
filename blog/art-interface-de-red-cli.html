@@ -12,7 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
    
     <meta charset="UTF-8">
-    <title>postindex-DESARROLLOCSEG</title>
+    <title>Blog-DESARROLLOCSEG-Deteción+detarjetade+red+y+configuración+manual+en+Linux</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="../docs/estilos/estilost2.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -71,7 +71,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	  
         <ul id="menu-items">
          <li><a href="../index.html"rel="noopener noreferrer">INICIO</a></li>
-        <li><a href="../blog.html"rel="noopener noreferrer">BLOG</a></li>
+        <li><a href="postIndex.html"rel="noopener noreferrer">POST.INDEX</a></li>
         <li><a href="cseg-dump.html"rel="noopener noreferrer"class="disabled-link">DCSEG.DUMP</a></li>
         </ul>
 
@@ -88,75 +88,94 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="principal">
 
     <section id="blog">
-
-   <div id="migas"><p>desarrollocseg.com >>> blog >><strong>PostIndex</strong></p></div>
-
+   <br>
+   <br>
+   <div id = "migas"><p>desarrollocseg.com >>> blog >> Tecnología >  <strong>Deteción de tarjeta de red y configuración manual en Linux</strong></p></div>
 <!--1-->
+	<articl id="contenido">
+    <h2>Blog DesarrolloCSeg </h2>
+    
 
-<article id="contenido">
+	 	<div class="img-blog"><img src="../docs/img/ciberseguridad.jpg"alt="imagen-ciberseguridad"></div>        
+    
+         <h3>Deteción de tarjeta de red y configuración manual en Linux</h3>
 
-	<h2>PostIndex-Desarrollocseg </h2>
-
-	<h3>En esta sección encontraras el historial de los articulos del blog </h3>
+        <p>En este artículo quiero hablar sobre cómo levantar 
+          el servicio de red de nuestro ordenador desde la línea de comandos(CLI). 
+          Esto es especialmente útil cuando estamos en medio de una instalación mínima de Linux 
+          en cualquiera de sus distribuciones y necesitamos acceso a internet para instalar paquetes.</p>
 	
+	    <p>Lo primero que debemos hacer es comprobar la interfaz de red disponible en nuestro equipo.
+        Para ello, podemos usar el siguiente comando:</p>
+        <h4><code>ip link</code></h4>
 
-	<h2 id="ciber">Ciberseguridad</h2>
-	<div id="desplegar" style="display:none;">
-		<!---<div class="img-blog"><img src="docs/img/ciberseguridad.jpg"alt="imagen-ciberseguridad"></div>-->        
-    indice de ciberseguridad
+       <div class="img-blog-cont" ><img src="../docs/img/img-blogs/ip-link.jpg" alt=""> </div> 
 
-		<ul>
-			<li><a href="art-que-es-ciberseguridad.html">¿Que es la Ciberseguridad?</a></li>
-			<li><a href="art-Ataque-DDoS.html"> ¿Que es un Ataque DDoS denegación de servicio distribuido?</a></li>
-			<!---<li><a href=""></a></li>-->
-		</ul>
 
-        </div><button class="btn-Root-access">Root-access</button>
+   	
+        <p>Este comando nos mostrará las interfaces detectadas. <br>
+           <strong>lo: <br>
+                    enp3s0:eternet  <br>
+                    wlx08a5c8ad8d7f:wi-fi</strong>
+                   </p>
+        <p>Si no contamos con un servidor DHCP que asigne automáticamente la dirección IP, 
+          el siguiente paso es configurar una dirección IP temporal de forma manual</p>
+        <h4><code>sudo ip addr add 000.000.0.00 dev interface</code></h4>
 
-	 
-	    
+            <div class="img-blog-cont" ><img src="../docs/img/img-blogs/add-ip.jpg" alt=""></div>
 
-	<h2 id="tecno">Tecnología</h2>
+        <p>Levantar la interfaz</p>
+        <h4><code>sudo ip link set interface up</code></h4>
+
+         <div class="img-blog-cont" > <img src="../docs/img/img-blogs/link-up.jpg" alt=""></div>
+       	
+        <p>Configura la puerta de enlace por defecto para habilitar el acceso a internet.</p>
+        <h4><code>sudo ip route add default via 000.000.0.0</code></h4>
+ 
+        <div class="img-blog-cont" > <img src="../docs/img/img-blogs/PUERTA-ENLACE.jpg" alt=""></div>
+        <p>Este comando envía tres paquetes ICMP al dominio para verificar si hay conexión a la red o a internet.</p>
+        <h4><code>ping -c 3 desarrollocseg.com </code></h4>
+  
+        <div class="img-blog-cont" > <img src="../docs/img/img-blogs/ping-desarrollocseg.jpg" alt=""></div>
+       
+        <p>Después de tener conexión a la red, comprobamos si están disponibles las utilidades dhclient o dhcpcd para gestionar direcciones IP mediante DHCP.</p>   
+        <h4><code>sudo apt update</code></h4>
+        <div class="img-blog-cont" ><img src="../docs/img/img-blogs/update.jpg" alt=""> </div><br>
+        <h4><code>sudo dhclient -h</code></h4>
+        <div class="img-blog-cont" ><img src="../docs/img/img-blogs/dhclient.jpg" alt=""></div>
+    
+            <p>Una vez instalada la utilidad, permite configurar la red automáticamente de forma persistente mediante DHCP.</p>
+         <h4><code>sudo dhclient interaface</code></h4>
+         <div class="img-blog-cont" ><img src="../docs/img/img-blogs/dhclientper.jpg" alt=""></div>
+              <p>Con esto, ya dispones de conexión a internet a través de Ethernet, lo que te permitirá instalar paquetes y continuar configurando tu entorno en Linux.</p>
+
+
+            </article>        
+<div id="presentacion">
+
+	<div id="imagen-presentacion">
 	
-	<!---articulo tecnología-->	
-	<div id="desplegar" style="display:none;">
+       	<img src="../docs/img/presentacion.jpg"alt="imagen-presentacion">
+	</div>
 
-		 	<!---<div class="img-blog"><img src="docs/img/tecnologia.jpg"alt="imagen-tecnología"></div>-->
+	<article id="contenido">
+	<div id="text-presentacion">
+	<p>Hola soy Cesar Cruz Desarrollador web con conocimientos en ciberseguridad y administración de sistemas Linux. 
+	 el objetivo de este blog es desarrollar  publicaciones en forma de artículos sobre tecnología, desarrollo web y 
+	ciberseguridad.</p>
+	</div>
+	</div>
 
-	indice tecnologia 
-		<ul>
-			<li><a href="art-Que-es-la-Tecnologia.html">¿Qué es la Tecnología?</a></li>
-			<li><a href="art-Sistema-operativo-Linux.html">Sistema operativo Linux</a></li>
-			<li><a href="art-interface-de-red-cli.html">Deteción de tarjeta de red y configuración manual en Linux</a></li>
+    </article>
 
-			<!---<li><a href=""></a></li>-->
-		</ul>
+</section>
 
-</div><button class="btn-Root-access">Root-access</button>
-
-
-        <h2>Desarrollo web</h2>
-		<div id="desplegar" style="display:none;">
-			<!---<div class="img-blog"id="desa"><img src="docs/img/desarrollo.avif"alt="imagen-ciberseguridad"></div>-->
-	indice desarroloweb   
-		<ul>
-			<li><a href="art-El-desarrollo-web.html">El desarrollo web</a></li>
-			<li><a href="art-UX-DesarrolloWeb.html">UX (user experience) en el Desarrollo Web</a></li>
-		</ul>
-         </div><button class="btn-Root-access">Root-access</button>
-
-		 <!--poner caja de imagenes  instagram -->
-
-		 <div class="box-img-insta"></div>
-
-	</article>  
-
-    </section>
-
-<!--lista de entradas-->
+										<!--lista de entradas-->
 <div id="main-container">
+
 <div id="sidebar">
-    <div id="entradas">
+
+  <div id="entradas">
 <h3>Entradas</h3>
 <ul>
 <li><a href="#ciber">Ciberseguridad</a><li>
@@ -179,7 +198,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <li><a href="DataStream.html"><img src="docs/img/datastream.png"alt ="DataStream"rel="noopener noreferrer"></a></li>
 
      </ul>
-
+     
 </ul>
 <div id="hide">
 <img src="../docs/img/logob1.png" alt ="logo"></div>
@@ -250,9 +269,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+
 <!--botton arriba-->
 <button onclick="scrollToTop()" id="backToTopBtn">↑subir</button>
 <!--botton arriba-->
+
+
+
+
+
   </div>
 
     
@@ -274,7 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="footer1">
 <h2>Redes sociales</h2>
 <ul>
-     <li><a href="https://www.youtube.com/@Desarrollocseg" target="_blank"><img src="../docs/img/youtube.png"alt ="youtube"rel="noopener noreferrer"></a></li>
+     <li><a href="https://www.youtube.com/@Desarrollocseg" target="_blank"><img src="../docs/img/youtube.png"alt ="youtube"rel="noopener noreferrer"></>
      <li><a href="https://github.com/Desarrollocseg"target="_blank"><img src="../docs/img/ghub.png" alt="github" rel="noopener noreferrer"></a></li>
      <li><a href= "https://www.instagram.com/desarrollocseg?igsh=MXJiaXFzeDRtb2Q1bQ=="target="_blank"><img src="../docs/img/instagram.png" alt="instagram"  rel="noopener noreferrer"></a></li>
      <li><a href="https://www.freelancer.com/u/cesareduardocruz"target="_blank"><img src="../docs/img/freelancer.png" alt="freelancer"></a></li>
@@ -296,7 +321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul>
      <li><a href="../ayuda/FAQs.html"target="_blank" rel="noopener noreferrer">FAQs</a></li>
     <li><a href="#" target="_blank" rel="noopener noreferrer">Acerca de nosotros</a></li>
-    <li><a href="../docs/form/pqrs.html"  rel="noopener noreferrer">Peticiones, Quejas Reclamos y Sugerencia,(PQRS)</a></li>
+    <li><a href="../contactenos.html"  rel="noopener noreferrer">Peticiones, Quejas Reclamos y Sugerencia,(PQRS)</a></li>
 </ul>
   </div>
 
@@ -318,7 +343,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!--scripts-->
 
    <script src="../docs/scripts/navbar-script.js"></script>
-   <script src="../docs/scripts/postindex.js"></script>	 
+   <script src="..7docs/scripts/blog.js"></script>	 
    <script src="../docs/scripts/boton-arriba.js"></script>
 
     <!--fin de los scripts-->

@@ -294,11 +294,13 @@ nav a:hover {
 #migas{
 	font-size: small;
 	background-color: #F9F9F9;
-	display: flex;
-	width: 65%;
+	display: grid;
+	width: 100%;
 	height: 40px;
-
+	font-style: italic;
+  	align-content: space-evenly;
 }
+
 
 .separador{
 	height: 2%;
@@ -308,7 +310,12 @@ nav a:hover {
 	height: 99px;
 	width: 100%;
 }
+.box-img-insta{
 
+	
+	padding-top: 100%;
+	display: grid;
+}
 #blog{
     	background-color:white;
   		padding:1%;
@@ -336,6 +343,27 @@ nav a:hover {
   	filter: grayscale(85%);
 	width: 40%;
 	height: 200px;
+  	max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+  	max-height: 100%;
+  	border-bottom-left-radius: 10%;
+  	border-top-right-radius: 10%;
+
+}
+.img-blog-cont{
+	background-color: black;
+ 	 width: 100%;
+	 padding-top: 4%;
+	 display: flex;
+ 	 justify-content: center;
+ 	 align-items: center;
+ 	 padding-bottom: 2%;
+	 margin: 5% 0% 5% 0%;
+}
+.img-blog-cont img {
+
+	/*max-width: 400px;*/
+	width: 100%;
+	height: 100%;
   	max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
   	max-height: 100%;
   	border-bottom-left-radius: 10%;

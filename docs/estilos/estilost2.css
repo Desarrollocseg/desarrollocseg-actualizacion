@@ -790,9 +790,9 @@ th {
     	background-color:white;
     	width: 20em;
        	max-height: 100%;
-   	max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
-   	justify-content: left; /* Centra horizontalmente */
-	padding:1px 20px 20px 20px
+   		max-width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+   		justify-content: left; /* Centra horizontalmente */
+		padding:1px 20px 20px 20px
   }
   
  .col-tex2 {
@@ -804,10 +804,13 @@ th {
         justify-content: left; /* Centra horizontalmente */
 
   }
+  .justify-center {
+	justify-content: center;
+  }
 
   .col-tex > p > h2 {
     	text-align:center; /* Alinea el texto justificado */
-   	margin:10%;
+   		margin:10%;
     	padding: 5%;
     	font-size: medium;
 

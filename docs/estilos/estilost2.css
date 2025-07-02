@@ -189,15 +189,27 @@ nav a:hover {
     	margin: 0 auto; /* Centrar la barra de navegación horizontalmente */
 
 }
+
 #menu-items {
+
     	list-style-type: none;
     	margin-left: 10%;
     	margin-right: 20%;
     	padding: 0;
     	display:flex;
-   
-   
+      
 }
+
+#menu-items-index {
+
+    	list-style-type: none;
+    	margin-left: 10%;
+    	margin-right: 20%;
+    	padding: 0;
+    	display:flex;
+      
+}
+
   
 #menu-items ul {
     
@@ -206,15 +218,39 @@ nav a:hover {
     	display:flex;
    
 }
+#menu-items-index ul {
+    
+    	margin: 0;
+    	padding: 0;
+    	display:flex;
+   
+}
+
 #menu-items li {
+
     	margin-right: 10px;
 }
+
+#menu-items-index li {
+
+    	margin-right: 10px;
+}
+
 #menu-items li a {
+
     	color: #68757B;
     	text-decoration: none;
     	font-size: 15px;
 		border-style: double;
 		border-radius: 15%;
+}
+#menu-items-index li a {
+
+    	color: #68757B;
+    	text-decoration: none;
+    	font-size: 15px;
+		/*border-style: double;
+		border-radius: 15%;*/
 }
 
 
@@ -249,7 +285,10 @@ nav a:hover {
     	display: none; /* Ocultar el menú de hamburguesa por defecto */
     	cursor: pointer;
 }
-
+#menu-toggle-indx {
+    	display: none; /* Ocultar el menú de hamburguesa por defecto */
+    	cursor: pointer;
+}
 .bar {
     	width: 25px;
     	height: 3px;
@@ -505,6 +544,7 @@ background-color:#25D366;
 	max-width: 100%; /* Ajusta el ancho máximo */
 	height: auto; /* Mantiene la proporción de aspecto */
   	filter: grayscale(75%);
+	border-radius: 10%;
 }
 
 #contenido2{
@@ -804,9 +844,8 @@ th {
         justify-content: left; /* Centra horizontalmente */
 
   }
-  .justify-center {
-	justify-content: center;
-  }
+  
+	
 
   .col-tex > p > h2 {
     	text-align:center; /* Alinea el texto justificado */

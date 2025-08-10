@@ -187,7 +187,7 @@ nav a:hover {
     	justify-content: space-between;
     	max-width: 100%; /* Ancho máximo del contenedor */
     	margin: 0 auto; /* Centrar la barra de navegación horizontalmente */
-
+		box-shadow: 2px 2px 3px 1px #d7eaf2;
 }
 
 #menu-items {
@@ -485,7 +485,7 @@ background-color:white;
 }
 
 #contenido{
-
+display: table;
     	flex:content;
     	min-height: 80%;
     	text-align: justify;
@@ -712,8 +712,12 @@ width: 100%;
     	font-size: x-large;
 }
 #servicios a{
-    	color: azure;
-    	padding-bottom: 3%;
+    	color: rgb(251, 252, 251);
+		background-color: #25D366;
+		border-radius: 10%;
+		border-style: groove;
+		border-color:#25D366;
+		padding: 0.5%;
 
 }
 #servicios a:hover{
@@ -1158,6 +1162,20 @@ footer ul li {
     	margin-right: 1px;
 }
 /*footer*/
+.copy {
+  background-color: #1E6BA2;
+  border-top-style: ridge;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0%;
+  font-size: 14px;
+}
+.copy p {
+  margin: 0%;
+}
+
+
 
 
 

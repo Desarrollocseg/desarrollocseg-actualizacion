@@ -12,6 +12,6 @@ function toggleButtonVisibility() {
 }
 
 function goToWhatsApp() {
-    const phoneNumber = "+573058370733"; // Reemplaza con el número de WhatsApp
+    const phoneNumber = "+573337338540"; // Reemplaza con el número de WhatsApp
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
 }

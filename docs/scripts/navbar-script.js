@@ -30,7 +30,7 @@ window.addEventListener('resize', function() {
 
 
 //index
-document.getElementById('menu-toggle-indx').addEventListener('click', function() {
+document.getElementById('menu-toggle-index').addEventListener('click', function() {
     var menuItemsIndex = document.getElementById('menu-items-index');
     menuItemsIndex.style.display = (menuItemsIndex.style.display === 'block') ? 'none' : 'block';
 
